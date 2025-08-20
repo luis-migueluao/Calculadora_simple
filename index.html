@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora de Cuota Mensual</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h2>Calculadora de Cuota Mensual</h2>
+  
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+
+  <label for="prestamo">Préstamo ($):</label>
+  <input type="number" id="prestamo" placeholder="Ej: 1000000">
+
+  <label for="meses">Meses:</label>
+  <input type="number" id="meses" placeholder="Ej: 12">
+
+  <label for="interes">Interés anual (%):</label>
+  <input type="number" step="0.01" id="interes" placeholder="Ej: 15">
+
+  <button onclick="calcularCuota()">Calcular</button>
+
+  <textarea id="resultado" readonly placeholder="Aquí verás el resultado..."></textarea>
+
+  <script src="script.js"></script>
+</body>
+</html>
